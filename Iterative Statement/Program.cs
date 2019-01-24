@@ -29,12 +29,13 @@ namespace Iterative_Statement
                 string userInput = Console.ReadLine();
 
                 int Input_entered = int.Parse(userInput);
-
+                // Parse data entered from user into integer named "Input_entered"
 
                 if ((Input_entered > 0) && (Input_entered <= 100))
                 {
                     Console.WriteLine("Executing a Do While Loop!");
                     Console.WriteLine("The Do While Loop will iterate " + Input_entered.ToString() + " times.");
+
                     // Do While Loop
                     do
                     {
@@ -43,7 +44,8 @@ namespace Iterative_Statement
                     } while (Input_entered > 0);
                     Console.WriteLine("Press any key to exit the program ...");
                     Console.ReadKey(true);
-                }
+                } // End of If 
+
                 // If the user does not enter a value between 1 and 100, display a message
                 else
                 {
@@ -51,16 +53,21 @@ namespace Iterative_Statement
                     Console.WriteLine("Press any key to exit the program and try again ...");
                     Console.ReadKey(true);
                 }
+
             } // End of try
             catch
             {
                 Console.WriteLine("Please enter an integer value and try running the program again ...");
                 Console.WriteLine("Press any key to exit the program ...");
                 Console.ReadKey(true);
-            }
-        }
-    }
-}
+
+            } //End of catch 
+
+        } //End of Static
+
+    } //End of class
+
+} //End of namespace
 
 
               
